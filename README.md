@@ -3,7 +3,7 @@ Este projeto é um sistema de chamados simples, focado na aplicação prática d
 
 O objetivo principal deste repositório é demonstrar o processo de construção de uma aplicação web moderna, desde a estruturação de componentes até a integração com um serviço de back-end em tempo real.
 
- <h3>⚛️Tecnologias Abordadas</h3><br><br>
+ <h3>⚛️Tecnologias Abordadas</h3><br>
 ReactJS: Biblioteca JavaScript para construção de interfaces de usuário baseadas em componentes.
 
 Firebase: Plataforma de desenvolvimento de aplicativos, utilizada para:
@@ -18,10 +18,10 @@ Hooks do React (useState, useEffect, useContext): Utilizados para gerenciar o es
 
 Estilização: Aplicação de estilos para uma interface coesa e responsiva.
 
-<h3>🎯 Foco Principal: Desenvolvimento Front-End</h3><br>br>
+<h3>🎯 Foco Principal: Desenvolvimento Front-End</h3><br>
 O projeto foi estruturado para destacar os seguintes aspectos do desenvolvimento front-end com React:
 
-<h3>1. 🧱 Arquitetura de Componentes</h3><br>br>
+<h3>1. 🧱 Arquitetura de Componentes</h3><br>
 A aplicação é totalmente construída com componentes reutilizáveis. Podendo incluir:
 
 Componentes de Layout (Layout Components): Estruturas principais como Sidebar, Header e Footer.
