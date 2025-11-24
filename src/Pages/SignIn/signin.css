@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* --- Estilos Globais e Fundo --- */
+body {
+    font-family: "Lato", sans-serif;
+    /* Usando 400 (regular) e 300 (light) para o minimalismo */
+    font-weight: 400; 
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na dimensão */
+}
+
+.container-center {
+    /* Altura total da tela */
+    min-height: 100vh;
+    /* Centralização perfeita (vertical e horizontal) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fundo escuro sutil */
+    background-color: #121212; 
+    padding: 20px; /* Padding maior para respiro em telas pequenas */
+}
+
+/* --- Área Principal de Login --- */
+.area-login {
+    /* Fundo branco/cinza muito claro para contraste moderno */
+    background-color: #F9F9F9; 
+    width: 90%;
+    /* Limite máximo para telas grandes */
+    max-width: 400px; 
+    /* Sombra suave para levantar o container */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    border-radius: 12px; /* Cantos arredondados suaves */
+    overflow: hidden; /* Garante que a imagem se encaixe perfeitamente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Imagem/Banner Superior --- */
+.img-login {
+    /* Cor principal (Roxo/Lilás) */
+    background-color: #a44bbe; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Altura definida pela imagem interna */
+    padding: 30px 0; 
+}
+
+.img-login img {
+    /* Tamanho da imagem mais compacto */
+    width: 100px;
+    height: 100px;
+    /* Remove o padding duplicado da imagem */
+    padding: 0; 
+    /* Adiciona filtro de cor para contraste (opcional) */
+    filter: invert(100%); 
+}
+
+/* --- Formulário --- */
+form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%; /* Mais centralizado */
+    display: flex;
+    flex-direction: column;
+    /* Espaçamento entre os elementos do formulário */
+    gap: 15px; 
+}
+
+form h1 {
+    /* Título mais discreto e moderno */
+    text-align: center;
+    font-weight: 300; 
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/* --- Campos de Input (Usuário/Senha) --- */
+.area-login input {
+    /* Altura mais confortável */
+    height: 45px; 
+    padding: 0 15px;
+    /* Remove a margem individual em favor do 'gap' do formulário */
+    margin: 0; 
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333333;
+    /* Transição suave para o efeito de foco */
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.area-login input:focus {
+    /* Remove o contorno padrão */
+    outline: none; 
+    /* Borda e sombra na cor principal (roxo) no foco */
+    border-color: #a44bbe; 
+    box-shadow: 0 0 0 3px rgba(164, 75, 190, 0.2);
+}
+
+/* --- Botão de Envio --- */
+.submit-btn {
+    /* Altura confortável */
+    height: 45px; 
+    /* Cor principal (Roxo/Lilás) */
+    background-color: #a44bbe; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    /* Transição suave para o efeito hover */
+    transition: background-color 0.3s, transform 0.1s; 
+    margin-top: 10px; /* Espaçamento extra acima do botão */
+}
+
+.submit-btn:hover {
+    /* Escurece levemente no hover */
+    background-color: #8c3f9e; 
+}
+
+.submit-btn:active {
+    /* Efeito de "clique" no botão */
+    transform: translateY(1px); 
+}
