@@ -1,4 +1,4 @@
-📝 Sistema de Chamados com ReactJS e Firebase
+📝 Sistema de Chamados com ReactJS e Firebase <br>
 Este projeto é um sistema de chamados simples, focado na aplicação prática de conceitos de desenvolvimento front-end utilizando ReactJS. Para o back-end e banco de dados, utilizamos a plataforma Firebase, aproveitando seus serviços de Autenticação e Firestore.
 
 O objetivo principal deste repositório é demonstrar o processo de construção de uma aplicação web moderna, desde a estruturação de componentes até a integração com um serviço de back-end em tempo real.
