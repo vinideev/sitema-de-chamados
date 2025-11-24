@@ -1,4 +1,4 @@
-<h3>📝 Sistema de Chamados com ReactJS e Firebase </h3> <br><br>
+<h3>📝 Sistema de Chamados com ReactJS e Firebase </h3> <br>
 Este projeto é um sistema de chamados simples, focado na aplicação prática de conceitos de desenvolvimento front-end utilizando ReactJS. Para o back-end e banco de dados, utilizamos a plataforma Firebase, aproveitando seus serviços de Autenticação e Firestore.
 
 O objetivo principal deste repositório é demonstrar o processo de construção de uma aplicação web moderna, desde a estruturação de componentes até a integração com um serviço de back-end em tempo real.
@@ -21,7 +21,7 @@ Estilização: Aplicação de estilos para uma interface coesa e responsiva.
 <h3>🎯 Foco Principal: Desenvolvimento Front-End</h3><br>
 O projeto foi estruturado para destacar os seguintes aspectos do desenvolvimento front-end com React:
 
-<h3>1. 🧱 Arquitetura de Componentes</h3><br>
+<h5>1. 🧱 Arquitetura de Componentes</h5><br>
 A aplicação é totalmente construída com componentes reutilizáveis. Podendo incluir:
 
 Componentes de Layout (Layout Components): Estruturas principais como Sidebar, Header e Footer.
@@ -34,14 +34,14 @@ Essa modularização facilita a manutenção e a escalabilidade do código.
 
 Shutterstock
 
-2. 🔑 Autenticação e Context API
+<h5>2. 🔑 Autenticação e Context API</h5><br>
 A gestão do estado de autenticação é um ponto central:
 
 Utilizamos o Firebase Authentication para registrar e logar usuários.
 
 O estado do usuário logado é gerenciado globalmente usando a Context API do React. Isso permite que qualquer componente na árvore acesse as informações do usuário ou as funções de login/logout sem a necessidade de passar props repetidamente (Prop Drilling).
 
-3. 🎨 Estilização e Design
+<h5>3. 🎨 Estilização e Design</h5><br>
 A aplicação busca uma interface limpa e intuitiva:
 
 Responsividade: Garantia de que a interface se adapte a diferentes tamanhos de tela (desktop, tablet e mobile).
