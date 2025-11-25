@@ -7,6 +7,7 @@ import Profile from '../Pages/Profile'
 
 import Private from './Private'
 
+
 function RouterApp(){
     return(
     <Routes>
@@ -15,6 +16,7 @@ function RouterApp(){
         <Route path='/register' element={ <SignUp/>}/>
         <Route path='dashboard' element={<Private><Dashboard/></Private>}/>
          <Route path='/profile' element={<Private><Profile/></Private>}/>
+        
     </Routes>
     )
 }

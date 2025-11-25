@@ -11,8 +11,31 @@ import './profile.css'
 
 export default function Profile(){
 
-    const {user} = useContext(AuthContext)
-    const [avatarUrl, setAvatarUel] = useState(user && user.imagemUrl)
+    const {user, storageUsers, logout } = useContext(AuthContext)
+    const [avatarUrl, setAvatarUrl] = useState(user && user.imagemUrl)
+    const [imageProfile, setImageProfile] = useState(null)
+
+    const [name, setName] = useState(user && user.name)
+    const [email, setEmail] = useState(user && user.email)
+
+
+    function imgUpdate(e){
+        if (e.target.files[0]){
+            const image = e.target.files[0];
+       
+
+            if(image.type === 'image/jpeg' || image.type == 'image/png'){
+                setImageProfile(image)
+                setAvatarUrl(URL.createObjectURL(image))
+            } else{
+                alert("Envie um JPEG ou PNG")
+                setImageProfile(null)
+                return
+            }
+        }
+
+
+    }
 
     return(
 
@@ -29,12 +52,12 @@ export default function Profile(){
             <form className='forme=profile'>
 
 
-                <label className='form-profile'>
+                <label className='label-avatar'>
                     <span>
                         <FiUpload size={25} color='white'/>
                     </span>
 
-                    <input type='file' accept='image/*'/> <br/>
+                    <input type='file' accept='image/*' onChange={imgUpdate} /> <br/>
                     {avatarUrl === null ? (
                         <img src={avatar} alt='Foto de perfil' height={250} width={250}  />
                     ) : (
@@ -46,16 +69,20 @@ export default function Profile(){
                  </label>
 
                  <label>Nome</label>       
-                 <input type='text' placeholder='Seu nome'/>
+                 <input type='text' value={name} onChange={(e) => setName(e.target.value)}/>
 
                  <label>Email</label>
-                 <input type='text' placeholder='seuemail@email.com' disabled={true}/>   
+                 <input type='text' value={email} disabled={true}/>   
 
 
-                 <buttom type="submit" placeholder="Salvar" />
+                 <button type='submit'> Salvar</button>
             </form>
             
         </div>   
+
+        <div>
+            <button className='logout-btn' onClick={() => logout()}>Sair</button>
+        </div>
              
         </div>
           
